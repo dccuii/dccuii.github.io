@@ -15,3 +15,5 @@ I'm learning as I go - I'm way too far removed from my CS days, so I'm just enjo
 hehe uwu xdd rar
 
 ty for everything :)
+
+disclaimer: the drdcui thing is an inside joke, i'm not actually a dr (yet? ig), so while i can still utilize a small lack of responsibility :pensivewobble:, let us enjoy embarking on a hehe that i simply hope will be true. yaboi unfortunately does have enough motivation for such behaviors 
