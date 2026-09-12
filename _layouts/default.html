@@ -1,0 +1,36 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="dcui's personal website">
+
+  <!-- tab title -->
+  <title>{{ page.title | default: "dcui is peecui" }}</title>
+
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="/images/aaaa.png">
+</head>
+
+
+
+<!-- BODY -->
+<body>
+  <!-- header (+ nav) -->
+  {% include header.html %}
+
+  <!-- MAIN -->
+  <main id="main-content" class="container" tabindex="-1">
+    {{ content }}
+  </main>
+
+  <!-- feet??? pogchamp -->
+  {% include footer.html %}
+</body>
+
+</html>

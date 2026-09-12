@@ -1,0 +1,197 @@
+
+
+/******************************************************************************** 
+  GLOBAL: Shared colors and page width. Future pages can use this same stylesheet.
+********************************************************************************/
+:root {
+  --background: #ffffff;
+  --text: #25313c;
+  --muted: #596570;
+  --accent: #254e78;
+  --border: #dde3e9;
+  --page-width: 60rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--background);
+  color: var(--text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/******************************************************************************** 
+  LAYOUT:
+********************************************************************************/
+.container {
+  width: min(var(--page-width), calc(100% - 3rem));
+  margin-inline: auto;
+}
+
+
+/******************************************************************************** 
+  LINKS:
+********************************************************************************/
+a {
+  color: var(--accent);
+  text-underline-offset: 0.25em;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 5px;
+}
+
+/******************************************************************************** 
+  HEADER:
+********************************************************************************/
+.site-header {
+  border-top: 4px solid var(--accent);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem 2rem;
+  padding-block: 1.25rem;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.site-name {
+  font-size: 2rem;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+/******************************************************************************** 
+  HEADER NAV TABS
+********************************************************************************/
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+}
+
+nav a {
+  color: var(--muted);
+  font-weight: 600;
+  
+  display: inline-block;
+  padding-block: 0.5rem;
+  text-decoration: none;
+}
+
+nav a[aria-current="page"],
+nav a:hover {
+  text-decoration: underline;
+}
+
+/******************************************************************************** 
+  OVERALL STYLING FOR MAIN BODY CONTENT:
+********************************************************************************/
+main {
+  flex: 1;
+  padding-block: clamp(3rem, 9vw, 6rem);
+}
+
+.introduction {
+  max-width: 40rem;
+}
+
+h1 {
+  margin: 0 0 1.5rem;
+  color: var(--accent);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.5rem, 7vw, 3.75rem);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+p {
+  margin: 0 0 1.25rem;
+}
+
+.lead {
+  font-size: 1.25rem;
+}
+
+/******************************************************************************** 
+  HOMEPAGE: profile stuff
+********************************************************************************/
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.profile-image img {
+  display: block;
+  width: 12rem;
+  height: 12rem;
+  max-width: 100%; 
+  object-fit: cover;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-text{
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+/*************************************************************** 
+  MISC STUFF
+***************************************************************/
+hr {
+  border: 0;
+  border-top: 1px solid black;
+  margin: 3rem 0;
+}
+
+/*************************************************************** 
+  FOOTER 
+***************************************************************/
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1.25rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+/*************************************************************** 
+  This link appears when someone navigates using the keyboard. 
+***************************************************************/
+.skip-link {
+  position: absolute;
+  top: 0.75rem;
+  left: 1.5rem;
+  padding: 0.5rem 1rem;
+  transform: translateY(-200%);
+  background: var(--background);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
