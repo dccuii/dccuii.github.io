@@ -1,0 +1,31 @@
+<script>
+  MathJax = {
+    loader: {
+      load: ['[tex]/mathtools']
+    },
+
+    tex: {
+      packages: {'[+]': ['mathtools']},
+
+      inlineMath: {'[+]': [['$', '$']]},
+
+      macros: {
+        qq: '\\quad\\quad',
+
+        RR: '\\mathbb{R}',
+
+        dx: ['\\, d#1', 1],
+        ddx: ['\\frac{d}{d#1}', 1],
+        deldx: ['\\frac{\\partial}{\\partial#1}', 1],
+
+        PP: ['\\mathbb{P}\\left[#1\\right]', 1],
+        EE: ['\\mathbb{E}\\left[#1\\right]', 1],
+        VV: ['\\mathbb{V}\\left[#1\\right]', 1]
+
+      }
+    }
+
+
+  };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>

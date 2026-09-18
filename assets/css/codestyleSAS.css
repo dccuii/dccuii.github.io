@@ -1,0 +1,143 @@
+/******************************************************************************** 
+  OVERALL CODE BLOCK STYLING, SPACING, AND TEXT SIZING
+********************************************************************************/
+
+figure.highlight:has(code.language-custom_sas) {
+  background-color: #f6f8fa;
+  border: 1px solid #d0d7de;
+  padding: 8px;
+} /* background, border, paddding */
+
+figure.highlight:has(code.language-custom_sas) pre {
+  margin-top: 0;
+  margin-bottom: 0;
+} /* less top/bottom margin overall */
+
+figure.highlight:has(code.language-custom_sas) > pre {
+  overflow-x: auto;
+} /* code block doesn't run over on thin display */
+
+code.language-custom_sas,
+code.language-custom_sas pre {
+  font-size: 12px;
+  line-height: 1.5;
+} /* general font styling */
+
+
+/******************************************************************************** 
+  COPY BUTTON
+********************************************************************************/
+
+.sas-copy-toolbar {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 6px;
+}
+
+.sas-copy-button {
+  padding: 4px 8px;
+  background: white;
+  border: 1px solid #d0d7de;
+  border-radius: 4px;
+  color: rgb(63, 63, 63);
+  cursor: pointer;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.sas-copy-button:hover {
+  background: #eaeef2;
+}
+
+/******************************************************************************** 
+  Line numbers and the gutter spacing 
+********************************************************************************/
+
+code.language-custom_sas .gutter {
+  padding-right: 8px;
+  border-right: 1px solid #d0d7de;
+} /* line number gutter spacing */
+
+code.language-custom_sas .gutter .lineno {
+  text-align: right;
+  color: rgb(127, 127, 127);
+} /* line number text */
+
+code.language-custom_sas td.code {
+  padding-left: 8px;
+} /* code gutter spacing */
+
+
+/******************************************************************************** 
+  COMMENTS, NUMBERS, STRINGS, and anything black 
+********************************************************************************/
+
+code.language-custom_sas .cm,
+code.language-custom_sas .c1 {
+  color: #008000;
+} /* comments */
+
+code.language-custom_sas .m,
+code.language-custom_sas .mi,
+code.language-custom_sas .mf,
+code.language-custom_sas .mh, 
+code.language-custom_sas .ld,
+code.language-custom_sas .kc,
+code.language-custom_sas .no {
+  color: #008080;
+  font-weight: bold;
+} /* numbers: general, intfloathex, literals, miss . .A-Z-_ */
+
+code.language-custom_sas .s1,
+code.language-custom_sas .s2, 
+code.language-custom_sas .se,
+code.language-custom_sas .si {
+  color: #800080;
+  font-weight: normal;
+} /* strings */
+
+code.language-custom_sas .o, 
+code.language-custom_sas .p, 
+code.language-custom_sas .ss, 
+code.language-custom_sas .kt {
+  color: #000000;
+  font-weight: normal;
+} /* operators, punctuation, string symbol, keyword type ($) */
+
+code.language-custom_sas .sh {
+  color: #000000;
+  font-weight: normal;
+  background-color: #e8edf2;
+} /* DATALINES */
+
+/******************************************************************************** 
+  BLUE STUFF (keywords, logical operators, etc)
+    MISSING: STEP BOLD DARK BLUE
+********************************************************************************/
+
+code.language-custom_sas .kd {
+  color: #000080;
+  font-weight: bold;
+} /* STEP keywords, dark blue, bold*/
+
+code.language-custom_sas .k {
+  color: #0000ff;
+  font-weight: normal;
+} /* fill */
+
+code.language-custom_sas .ow {
+  color: #0000ff;
+  font-weight: normal;
+} /* operator words (AND, etc) */
+
+
+/******************************************************************************** 
+  LIGHT GREY (dataset, var, lists/autovars, macro) 
+********************************************************************************/
+code.language-custom_sas .n, 
+code.language-custom_sas .nv,
+code.language-custom_sas .nb,
+code.language-custom_sas .bp,
+code.language-custom_sas .nf {
+  color: #888888;
+  font-weight: normal;
+}
