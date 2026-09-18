@@ -6,15 +6,31 @@
 
 <!-- HEAD -->
 <head>
+  <!-- idk probably necessary :pensivewobble: -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="dcui's personal website">
 
-  <!-- tab title -->
+  <!-- browser tab name (title) and default -->
   <title>{{ page.title | default: "dcui is peecui" }}</title>
 
-  <link rel="stylesheet" href="/style.css">
-  <link rel="icon" href="/images/aaaa.png">
+  <!-- CSS stylesheets to import -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/codestyleSAS.css">
+
+  <!-- webpage icon :^) -->
+  <link rel="icon" href="/assets/images/aaaa.png">
+
+  <!-- FOR MATHJAX EQUATION RENDERING -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]}
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
+
 </head>
 
 
